@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*### Primary*/
+    --Dark-cyan: hsla(185, 75%, 39%, 0.859);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    /*### Neutral*/
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var( --Dark-cyan);
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-position:  right 45vw bottom 45vh, 45vw 45vh;
+    background-repeat: no-repeat;
+    color: rgba(32, 31, 31, 0.728);
+}
+
+.card {
+    background-color: rgb(255,255,255);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 15px;
+}
+
+.top {
+    background: url("images/bg-pattern-card.svg");
+    position: relative;
+    background-size: 100% 75%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;    
+}
+
+img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    position: absolute;
+    bottom:0;
+    transform: translate(-50%, 0);    
+}
+
+.bottom {
+    padding: 1rem 0 0;    
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid  hsla(0, 1%, 57%, 0.19);
+    margin-top: 1rem;
+    padding-top: 0.3rem;
+    margin: 1rem 0.5rem 0;
+}
+
+ p {
+    padding:0.2rem 0;
+    font-size: 15px;
+ }
+
+h3, ul li {
+    font-size: 18px;
+}
+
+p, span {
+    color: var( --Dark-grayish-blue);
+    font-weight: 500;
+}
+
+li {
+    margin: 1.2rem 1.5rem;
+    font-weight: 600;
+}
+
+li span {
+    font-size: 11px;
+    letter-spacing: 0.1rem;
+}
+
+.attribution { font-size: 11px; text-align: center; padding-top: 1.5rem; }
+.attribution a { color: hsl(228, 45%, 44%); }
